@@ -33,15 +33,14 @@ print (f"A multiplicação entre {primeiro_numero} e {segundo_numero} é {multip
 divisao = primeiro_numero / segundo_numero
 print (f"A divisao entre {primeiro_numero} e {segundo_numero} é {divisao}")
 
-nome = input ("Diga seu nome : ")
-print divisao = primeiro_numero / segundo_numero
-print (f"A ")
+nome = (input("Diga seu nome : "))
+print(f"Seja Bem Vindo, {nome}")
 primeiro_numero = int(input("Diga um numero : "))
-#print (type(primeiro_numero))
 segundo_numero = int(input("Diga outro numero : "))
-#print (type(segundo_numero))
 soma = primeiro_numero + segundo_numero
 print(f"A soma entre {primeiro_numero} e {segundo_numero} é {soma}")
+subtracao = primeiro_numero - segundo_numero
+print(f"A subtracao entre {primeiro_numero} e {segundo_numero} é {subtracao}")
 multiplicação = primeiro_numero * segundo_numero
 print (f"A multiplicação entre {primeiro_numero} e {segundo_numero} é {multiplicação}")
 divisao = primeiro_numero / segundo_numero
