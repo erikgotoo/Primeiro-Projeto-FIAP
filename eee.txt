@@ -73,3 +73,43 @@ print(b)
 print (c)
 print (d)
 print (e)
+
+
+FRONT-END
+!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 - Web</title>
+</head>
+<body>
+ 
+    <!-- Tipos de Cabeçalhos -->
+    <h1>Aula de Web</h1> 
+    <h2>Aula de Web</h2> 
+    <h3>Aula de Web</h3> 
+    <h4>Aula de Web</h4> 
+    <h5>Aula de Web</h5> 
+    <h6>Aula de Web</h6> 
+
+    <!-- parágrafos: -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus, vitae commodi qui voluptatum quaerat nihil accusantium! Quia hic, tempora ratione dolor aliquam similique voluptatum iure repudiandae, odit repellat minus.
+    </p>
+    
+    <!-- Imagens -->
+    <figure>
+       <img src="./Images/pexels-layanne-17189429 (1).jpg" alt="Estadio do Atletico Mineiro.">
+
+       <img src="Images/pexels-thiago-japyassu-20450299 (1).jpg" alt="Pão de Queijo.">
+
+       <figcaption>Fotos retiradas do 
+       <a href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a> 
+       </figcaption>
+    </figure>
+    
+     <video src="./videos/pexels-juancarlos-córdova-5854603.mp4" controls muted autoplay loop></video>
+    
+</body>
+</html>
