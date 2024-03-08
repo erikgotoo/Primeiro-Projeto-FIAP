@@ -171,3 +171,68 @@ if(letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u")
    print(F"{letra} é uma Vogal")
 else:
    print(F"{letra} é uma Consoante")
+
+AULA 3 PYTHON: 
+'''
+letra = input("Diga uma letra:")
+if(letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u"):
+   print(F"{letra} é uma Vogal")
+else:
+   print(F"{letra} é uma Consoante")
+
+nota = int(input("Diga sua nota:"))
+if nota >= 6:
+    print("Aprovado!")
+elif nota < 6 and nota >= 4 :
+    print("Exame")
+else:
+    print("Reprovado!")
+
+#Imposto de renda;
+salario = int(input("Diga seu salario:"))
+if(salario <= 1903.98):
+  print ("Você está isento do Imposto")
+elif (salario <= 2826.65):
+  imposto = salario * 0.075
+  print(f"Você deve pagar {imposto} de Imposto, você receberá: {salario - imposto}")
+elif (salario <= 3751.05):
+  imposto = salario * 0.15
+  print(f"Você deve pagar {imposto} de Imposto, você receberá: {salario - imposto}")
+elif (salario <= 4664.68):
+  imposto = salario * 0.225
+  print(f"Você deve pagar {imposto} de Imposto, você receberá: {salario - imposto}")
+else:
+  imposto = salario * 0.275
+  print(f"Você deve pagar {imposto} de Imposto, você receberá: {salario - imposto}")
+
+#Exercicio 1
+pn = int(input("Diga o primeiro número:"))
+sn = int(input("Diga o segundo número:"))
+conta = pn > sn
+if (conta):
+    print (f"{pn} é maior que o {sn}")
+else:
+    print (f"{sn} é maior que o {pn}")
+
+#Exercício 2
+ano = int(input("Diga seu ano de nascimento: "))
+if ano < 2006:
+    print("Você pode votar!")
+else:
+    print("Você nâo pode votar esse ano!")
+
+#Exercicío 3
+senha = int(input("Diga a sua senha:"))
+if senha == 1234:
+  print("Acesso Permitido!")
+else:
+  print("Acesso Negado!")
+
+#Exercicío 4
+quantidade = int(input("Diga a quantidade de maça:"))
+if quantidade < 12:
+    print(f"O valor a ser pago é {quantidade * 0.30} reais")
+else:
+    print(f"O valor a ser pago é {quantidade * 0.25} reais")
+
+
