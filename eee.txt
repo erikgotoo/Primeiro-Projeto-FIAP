@@ -205,6 +205,21 @@ else:
   imposto = salario * 0.275
   print(f"Você deve pagar {imposto} de Imposto, você receberá: {salario - imposto}")
 
+#MELHOR ESTILO PRA FAZER ISSO^^
+salario = int(input("Diga seu salario:"))
+if(salario <= 1903.98):
+    aliquota = 0
+elif (salario <= 2826.65):
+    aliquota = 7.5/100
+elif (salario <= 3751.05):
+    aliquota = 15/100
+elif (salario <= 4664.68):
+    aliquota = 22.5/100
+else:
+    aliquota = 27.5/100
+desconto = aliquota*salario
+salario = salario - desconto
+print(f"Seu salario apos o desconto de {desconto} será de R${salario:.2f}")
 #Exercicio 1
 pn = int(input("Diga o primeiro número:"))
 sn = int(input("Diga o segundo número:"))
