@@ -250,4 +250,39 @@ if quantidade < 12:
 else:
     print(f"O valor a ser pago é {quantidade * 0.25} reais")
 
+#Exercicio 5
+numero1 = int(input("Diga o primeiro número:"))
+numero2 = int(input("Diga o segundo número:"))
+numero3 = int(input("Diga o terceiro número:"))
+if (numero1 < numero2 and numero1 < numero3):
+    if (numero2 < numero3):
+        print(f"A ordem crescente vai ser {numero1} < {numero2} < {numero3}")
+    else:
+         print(f"A ordem crescente vai ser {numero1} < {numero3} < {numero2}")
+elif (numero2 < numero3):
+    if (numero3 < numero1):
+        print(f"A ordem crescente vai ser {numero2} < {numero3} < {numero1}")
+    else:
+        print(f"A ordem crescente vai ser {numero2} < {numero1} < {numero3}")
+else:
+    if (numero1 < numero2):
+     print(f"A ordem crescente vai ser {numero3} < {numero1} < {numero2}")
+    else:
+     print(f"A ordem crescente vai ser {numero3} < {numero2} < {numero1}")
+
+#Exercicio 6
+sexo = int(input("Digite 1 (Homem) e 2 (Mulher), diga o seu genero:"))
+altura = float(input("Diga o seu altura:"))
+formulah = (72.7*altura)-58
+formulam = (62.1*altura)-44.7
+if sexo == 1:
+    print(f"O seu peso ideal é de {formulah}")
+else:
+    print(f"O seu peso ideal é de {formulam}")
+'''
+#Exercicio 7
+lados = int(input("Digite o numero de lados:"))
+medida = int(input("Digite o tamanho do lado:"))
+if lados
+
 
