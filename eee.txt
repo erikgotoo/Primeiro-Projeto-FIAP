@@ -280,32 +280,28 @@ if sexo == 1:
 else:
     print(f"O seu peso ideal é de {formulam}")
 '''
-#Exercicio 7
-lados = int(input("Diga o número de lados: "))
-medida1 = int(input("Diga o tamanho do primeiro lado em centimetros:"))
-if lados == 3:
-    print(f"O seu polinomio é um triangulo e o perimetro é {lados*3}cm.")
-elif lados == 4:
-    print(f"O seu poligono é um quadrado e o perimetro é {lados*4}cm")
-elif lados == 5:
-    print(f"O seu poligono é um pentágono e o perimetro é {lados*5}cm")
 
-#Exercício 7
+#Exercício 7 e 8
+
 lados = int(input("Digite o número de lados do polígono: "))
-tamanhoLados = int(input("Digite o tamanho dos lados do polígono: "))
-if(lados == 3):
-    print(f"O polígono é um tiângulo e seu perímetro é {lados * tamanhoLados}")
-elif(lados == 4):
-    print(f"O polígono é um quadrado e seu perímetro é {lados * tamanhoLados}")
-elif(lados == 5):
-    print(f"O polígono é um pentágono e seu perímetro é {lados * tamanhoLados}")
-#Exercício 8
-elif(lados == 2):
+forma = ''
+if(lados < 3):
     print(f"Não é um polígono")
-elif(lados > 5):
+elif (lados > 5):
     print("Polígono não identificado")
+else:
+ tamanho = int(input("Digite o tamanho dos lados do polígono: "))
+if(lados == 3):
+    forma = 'triangulo'
+elif(lados == 4):
+    forma = 'quadrado'
+elif(lados == 5):
+   forma = 'pentagono'
+   perimetro = lados*tamanho
+if forma:
+    print(f"Você escolheu um {forma} com o perimetro de {perimetro}")
 '''
-'''
+
 #Exercício 9
 numero1 = int(input("Digite um número: "))
 numero2 = int(input("Digite outro número: "))
@@ -316,7 +312,17 @@ elif(numero2 > numero3):
     print(f"O maior número é {numero2}")
 else:
     print(f"O maior número é {numero3}")
-'''
+
+numero1 = int(input("Digite um número: "))
+numero2 = int(input("Digite outro número: "))
+numero3 = int(input("Digite outro número: "))
+maior = numero1
+if numero2 > maior:
+    maior = numero2
+if numero3 > maior:
+    maior = numero3
+print(maior)
+
 '''
 #Exercício 10
 lado1 = int(input("Digite o tamanho do primeiro lado: "))
