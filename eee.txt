@@ -290,4 +290,55 @@ elif lados == 4:
 elif lados == 5:
     print(f"O seu poligono é um pentágono e o perimetro é {lados*5}cm")
 
+#Exercício 7
+lados = int(input("Digite o número de lados do polígono: "))
+tamanhoLados = int(input("Digite o tamanho dos lados do polígono: "))
+if(lados == 3):
+    print(f"O polígono é um tiângulo e seu perímetro é {lados * tamanhoLados}")
+elif(lados == 4):
+    print(f"O polígono é um quadrado e seu perímetro é {lados * tamanhoLados}")
+elif(lados == 5):
+    print(f"O polígono é um pentágono e seu perímetro é {lados * tamanhoLados}")
+#Exercício 8
+elif(lados == 2):
+    print(f"Não é um polígono")
+elif(lados > 5):
+    print("Polígono não identificado")
+'''
+'''
+#Exercício 9
+numero1 = int(input("Digite um número: "))
+numero2 = int(input("Digite outro número: "))
+numero3 = int(input("Digite outro número: "))
+if(numero1 > numero2 and numero1 > numero3):
+    print(f"O maior número é {numero1}")
+elif(numero2 > numero3):
+    print(f"O maior número é {numero2}")
+else:
+    print(f"O maior número é {numero3}")
+'''
+'''
+#Exercício 10
+lado1 = int(input("Digite o tamanho do primeiro lado: "))
+lado2 = int(input("Digite o tamanho do segundo lado: "))
+lado3 = int(input("Digite o tamanho do terceiro lado: "))
+if(lado1 == lado2 and lado1 == lado3):
+    print(f"O triângulo é equilátero")
+elif(lado1 == lado2 or lado1 == lado3 or lado2 == lado3):
+    print(f"O triângulo é isósceles")
+else:
+    print(f"O triângulo é escaleno")
+'''
+
+#Exercício 11
+angulo1 = int(input("Digite o primeiro ângulo: "))
+angulo2 = int(input("Digite o segundo ângulo: "))
+angulo3 = int(input("Digite o terceiro ângulo: "))
+if (angulo1 == 90 or angulo2 == 90 or angulo3 == 90):
+  print("O triângulo é retângulo")
+elif (angulo1 > 90 or angulo2 > 90 or angulo3 > 90):
+  print("O triângulo é obtusângulo")
+else:
+  print("O triângulo é acutângulo")
+
 
