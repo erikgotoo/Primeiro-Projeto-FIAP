@@ -347,4 +347,52 @@ elif (angulo1 > 90 or angulo2 > 90 or angulo3 > 90):
 else:
   print("O triângulo é acutângulo")
 
+FRONT AULA 2 
 
+body{ background-color: beige ;
+      font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+   color: #9a158f;
+   font-size: 50px;
+   text-align: center;
+  }
+
+  p {color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação CSS</title>
+    <!--Chamada do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Puddles&display=swap" rel="stylesheet"> 
+    <!-- Chamada CSS -->
+    <link href="./CSS/style.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <!--<conteiner que recebe qualquer conteúdo -->
+   <div>
+    <h1>Formação CSS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero possimus eos aut quisquam, sequi error numquam, similique quod maxime inventore nobis labore sed vitae iusto vel quaerat. Fugiat, nihil?
+
+
+        "Saudades do Eric🧙‍♂️" 
+    </p>
+    <a href="https://www.lipsum.com/" target="_blank">Mais Informações</a>
+
+
+   </div>
+    
+
+</body>
+</html>
