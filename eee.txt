@@ -396,3 +396,62 @@ h1 {
 
 </body>
 </html>
+
+AULA 4 PYTHON
+
+'''
+#Exercicio 8 (outro metodo)
+lados = int(input("Digite o número de lados do polígono: "))
+forma = ''
+if(lados < 3):
+    print(f"Não é um polígono")
+elif (lados > 5):
+    print("Polígono não identificado")
+else:
+if(lados == 3):
+    forma = 'triangulo'
+elif(lados == 4):
+    forma = 'quadrado'
+else:
+    forma = "Pentagono"
+medida = int(input("Diga a medida do lado:"))
+perimetro = lados*medida
+print(f"O seu poligono é {forma}, e o perimetro é {perimetro}")
+
+#Multa
+velocidade = int(input("Insira a sua velocidade:"))
+if velocidade <= 100:
+    print(f"Você esta isento da multa!")
+else:
+  if velocidade <= 120:
+    conta = 0.20*velocidade
+  elif velocidade <= 150:
+    conta = 0.20*120+0.30*velocidade
+  else:
+    conta = 0.20*120+0.30*150+0.40*velocidade
+    print(F"Você estava a {velocidade} e deve pagar {conta:.2f} de multa!")
+
+#Descobrir par ou impar
+numero = int(input("Diga o seu numero: "))
+if numero%2 == 0:
+    print(f"{numero} é par pois {numero} % {2}= {numero%2}")
+else:
+    print(f"{numero} é impor pois {numero} % {2}= {numero%2}")
+
+#Comparador de quantos pares e quantos impares"
+numero1 = int(input("Diga o primeiro numero: "))
+numero2 = int(input("Diga o segundo numero: "))
+numero3 = int(input("Diga o terceiro numero: "))
+numero4 = int(input("Diga o quarto numero: "))
+numero5 = int(input("Diga o quinto numero: "))
+
+par = 0
+par = numero1%2
+par = par + numero2%2
+par = par + numero3%2
+par = par + numero4%2
+par = par + numero5%2
+impar = 5 - par
+
+print(f"São {par} numeros pares e {impar} numeros impares")
+'''
