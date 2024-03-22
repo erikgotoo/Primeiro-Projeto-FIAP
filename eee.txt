@@ -455,3 +455,48 @@ impar = 5 - par
 
 print(f"São {par} numeros pares e {impar} numeros impares")
 '''
+AULA 5 PYTHON
+'''
+par = 0
+quantidade = 0
+while quantidade < 10:
+  numero = int(input("Diga um numero: "))
+  if numero%2 == 0:
+    par = par + 1 #par+= 1 (simplificado)
+  quantidade += 1
+print(F"Você digitou {par} pares e {10-par} impares.")
+
+senha = int(input("Digite a sua senha: "))
+while senha != 9090:
+     print("Você errou burro, digite novamente!")
+     senha = int(input("Digite a sua senha: "))
+print("Você acertou sua senha")
+
+senha = int(input("Digite a sua senha: "))
+testes = 1
+senha1 = 9090
+while senha != senha1 and testes < 3:
+     print(f"Você errou burro, mais {3 - testes} tentativas!")
+     senha = int(input("Digite a sua senha: "))
+     testes += 1
+if senha == senha1:
+     print("Você acertou sua senha")
+else:
+     print("Limite de senha atingida!")
+
+numero = int(input("Digite o seu numero: "))
+mais = 0
+while numero != 0:
+    mais += numero
+    numero -= 1
+print(mais)
+
+#MELHOR JEITO FAZER
+numero = int(input("Digite o seu numero: "))
+i = 0
+soma = 0
+while i < numero:
+    i += 1
+    soma += i
+    print(soma)
+'''
