@@ -1,1 +1,72 @@
+======================================================================================================================
+AULA 1 
 
+'''
+frase = "Hello World!"
+primeiro_numero = 1
+segundo_numero = 1.5
+booleana = False
+print(frase)
+print(type(frase))
+print(primeiro_numero)
+print(type(primeiro_numero))
+print(segundo_numero)
+print(type(segundo_numero))
+print(booleana)
+print(type(booleana))
+'''
+'''
+primeiro_numero = 2
+segundo_numero = 3
+soma = primeiro_numero + segundo_numero
+print (f"A soma entre {primeiro_numero} e {segundo_numero} é {soma}")
+'''
+'''
+primeiro_numero = 2
+segundo_numero = 3
+multiplicação = primeiro_numero * segundo_numero
+print (f"A multiplicação entre {primeiro_numero} e {segundo_numero} é {multiplicação}")
+divisao = primeiro_numero / segundo_numero
+print (f"A divisao entre {primeiro_numero} e {segundo_numero} é {divisao}")
+
+nome = (input("Diga seu nome : "))
+print(f"Seja Bem Vindo, {nome}")
+primeiro_numero = int(input("Diga um numero : "))
+segundo_numero = int(input("Diga outro numero : "))
+soma = primeiro_numero + segundo_numero
+print(f"A soma entre {primeiro_numero} e {segundo_numero} é {soma}")
+subtracao = primeiro_numero - segundo_numero
+print(f"A subtracao entre {primeiro_numero} e {segundo_numero} é {subtracao}")
+multiplicação = primeiro_numero * segundo_numero
+print (f"A multiplicação entre {primeiro_numero} e {segundo_numero} é {multiplicação}")
+divisao = primeiro_numero / segundo_numero
+print (f"A divisao entre {primeiro_numero} e {segundo_numero} é {divisao}")
+
+frase = "Hello"
+frase = frase + " World,"
+frase = frase + " Como você esta?"
+print (frase)
+frase = "Estou bem"
+frase = frase + " Qual o seu nome?"
+print(frase)
+nome = int(input("Diga o seu nome : "))
+
+a = 3
+b = 5
+aux = a 
+a = b 
+b = aux
+print (a)
+print (b)
+'''
+a = 3>4
+b = 2!=3
+c = not 5==6
+d = 'texto' in 'Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável.'
+e = 2>1 or 8>9
+print (a)
+print(b)
+print (c)
+print (d)
+print (e)
+======================================================================================================================
