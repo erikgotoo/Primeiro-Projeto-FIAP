@@ -534,3 +534,50 @@ front css
 
 }
 
+WEB DEV (AULA 1 JS)
+INDEX.HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script src="/script.js"></script>
+    
+    
+</body>
+</html>
+SCRIPT.JS
+/*  
+// dar um alerta para pessoas que entram no site 
+alert("Hello World!")
+// dar uma opçao de resposta para o usuario do site 
+prompt("Digite seu nome: ")
+// dar opçao de escolha para o usuario do site 
+confirm("Você deseja sair? ")
+// mostrar pro usuario no console do site
+console.log("MINEIRO DÁ")
+
+// criar variaveis
+var nome = "Erik"
+var idade = 20
+var dataaula = "dia 02/04/2004"
+
+console.log(nome)
+console.log(idade)
+console.log(dataaula)
+*/
+// usar prompt pra dar o nome e mostrar no console
+var nome = prompt("Digite o seu nome: ")
+var idade = prompt("Digite a sua idade: ")
+var prof = prompt("Digite a sua profissao: ")
+var titulo = document.querySelector("h1")
+// usar informação coletada do nome pra usar em frases
+console.log("Ola " + nome + ", seja bem-vindo, você tem " + idade + " anos e sua profissao é " + prof + ".")
+
+titulo.innerHTML = "Ola " + nome + ", seja bem-vindo, você tem " + idade + " anos e sua profissao é " + prof + "."
+
