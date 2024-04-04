@@ -581,3 +581,45 @@ console.log("Ola " + nome + ", seja bem-vindo, você tem " + idade + " anos e su
 
 titulo.innerHTML = "Ola " + nome + ", seja bem-vindo, você tem " + idade + " anos e sua profissao é " + prof + "."
 
+AULA 6 PYTHON
+
+'''
+idoso = input("Voce é idoso? sim ou nao: ")
+while not (idoso == "sim" or idoso == "nao"):
+    print("Resposta errada!")
+    idoso = input("Voce é idoso? sim ou nao: ")
+
+if idoso == "sim":
+     print("coisa ruim")
+else:
+      print("coisa boa")
+
+numero = int(input("Digite o seu numero: "))
+i = 0
+soma = 0
+while True:
+    i += 1
+    soma += i
+    if i == numero:
+        break
+    print(soma)
+
+idade = input("Diga sua idade: ")
+while not idade.isnumeric():
+    print("Digite um numero")
+    idade = input("Diga sua idade: ")
+idade = int(idade)
+print(type(idade))
+'''
+numero = input("Diga seu numero: ")
+while True:
+    if numero.isnumeric():
+      #if(0 <= int(numero) >= 100):
+      if int(numero) > 0 and int(numero) < 100:
+        numero = int(numero)
+        break
+        print("Numero invalido")
+    print("Precisa ser numero")    
+print("Numero de merda!")
+
+
