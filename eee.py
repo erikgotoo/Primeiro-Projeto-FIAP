@@ -622,4 +622,46 @@ while True:
     print("Precisa ser numero")    
 print("Numero de merda!")
 
+AULA 7 PYTHON
+nota = (input("Digite sua nota da prova: "))
+while not nota.isnumeric():
+    print("Coloque sua nota de 0 a 10")
+    nota = (input("Digite sua nota da prova: "))
+nota = int(nota)
+if nota < 11:
+ print(f"Nota {nota} de merda")
+else:
+    print("Nota impossivel burro, 10 é o limite!")
+'''
+nome = input("Diga o seu nome: ")
+
+letrasnome = len(nome)
+while letrasnome <= 3:
+    nome = input("Diga o seu nome com no minimo 4 letras: ")
+    letrasnome = len(nome)
+
+idade = input("Diga a sua idade: ")
+
+while not idade.isnumeric():
+    if (int(idade) < 0 or (int(idade) > 150
+     print("Diga a sua idade, vc nasce com 0 e morre com no max 150")
+
+salario = (input("Diga o seu salario"))
+
+while True:
+ if salario.isnumeric():
+     if int(salario) > 0:
+         break
+     print("Voce eh desempregado? Digite mais que 0")
+ else:
+  print("NUMERO ANIMAL!")
+
+sexo = input("Diga o seu sexo em f para feminino e m para masculino: ")
+while not (sexo == "f" or sexo == "m"):
+    sexo = input("Diga o seu sexo em f para feminino e m para masculino: ")
+
+estadocivil = input("Diga o seu estado civil em 's' solteiro,'c' casado,'v' viuvo,'d' divorciado")
+while not (estadocivil == 's' or estadocivil == 'c' or estadocivil == 'v' or estadocivil == 'd'):
+    estadocivil = input("Diga o seu estado civil em 's' solteiro,'c' casado,'v' viuvo,'d' divorciado")
+
 
