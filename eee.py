@@ -664,4 +664,99 @@ estadocivil = input("Diga o seu estado civil em 's' solteiro,'c' casado,'v' viuv
 while not (estadocivil == 's' or estadocivil == 'c' or estadocivil == 'v' or estadocivil == 'd'):
     estadocivil = input("Diga o seu estado civil em 's' solteiro,'c' casado,'v' viuvo,'d' divorciado")
 
+    Aula Front 5
+    :root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-pink: #dc143d;
+    --transition: .5s;
+    --font-boddy: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: var(--font-boddy);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 600;
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--color-pink);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: gray; */
+    /* border: 10px solid var(--color-dark); */
+    /* padding: 20px; */
+    
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3));
+    background-image: url(../images/images-vinicola/vinicolas/pexels-alleksana-4186555.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: 50%;
+}
+
+.header-page {
+    width: 100%;
+    height: 80px;
+    /* background-color: blue; */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-page ul {
+    display: flex;
+    gap: 30px;
+} 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinheria Agnello</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header-page">
+            <h1>Vinícula Agnello</h1>
+            <!-- nav>ul>li*4>{Link$} -->
+            <nav>
+                <ul>
+                    <li><a href="https://sudoku-online.com/pt" target="_blank">Link1</a></li>
+                    <li><a href="">Link2</a></li>
+                    <li><a href="">Link3</a></li>
+                    <li><a href="">Link4</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
+
 
