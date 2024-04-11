@@ -760,3 +760,92 @@ a:hover {
 </html>
 
 
+AULA 7 PYTHON
+'''
+#Exercicio 1
+numero = input("Diga seu numero: ")
+while True:
+    if numero.isnumeric():
+      #if(0 <= int(numero) >= 10):
+      if int(numero) > 0 and int(numero) < 10:
+        numero = int(numero)
+        break
+        print("Numero invalido")
+    print("Precisa ser numero")
+print("Numero de merda!")
+
+
+#Exercicio 2
+nome = input("Diga o seu nome: ")
+while len(nome) < 3:
+    nome = input("Diga o seu nome com mais de 3 letras: ")
+
+while True:
+    idade = input("Diga a sua idade: ")
+    if idade.isnumeric():
+        idade = int(idade)
+        if idade < 150:
+            break
+    print("Opção Inválida")
+
+salario = input("Diga o seu salario: ")
+while not salario.isnumeric():
+    print("Opção Inválida")
+    salario = input("Diga o seu salario: ")
+
+sexo = input("Diga seu sexo em f ou m: ")
+while not (sexo == 'f' or sexo == 'm'): #while sexo != 'f' and sexo == != 'm':
+    print("Opção Inválida")
+    sexo = input("Diga seu sexo em f ou m: ")
+
+estadocivil = input("Diga seu estado civil: s,c,v ou d: ")
+while not (estadocivil == 's' or estadocivil == 'c' or estadocivil == 'v' or estadocivil == 'd'):
+    print("Opção Inválida")
+    estadocivil = input("Diga seu estado civil: s,c,v ou d: ")
+
+
+
+#Exercicio 3
+a = 80
+b = 200
+tempo = 0
+while a < b:
+    a*= 1.03
+    b*= 1.015
+    tempo += 1
+print(tempo)
+
+
+
+#Exercicio 4
+quantidade = 0
+soma = 0
+while quantidade < 5:
+    numero = input(f"Diga o {quantidade+1} numero: ")
+    while not numero.isnumeric():
+        print("NUMERO BURRO!")
+        numero = input(f"Diga o {quantidade+1} numero: ")
+    numero = int(numero)
+    soma += numero
+    quantidade += 1
+print(f"A soma é {soma}")
+print(f"A media é {soma/quantidade}")
+
+
+
+
+#Exercicio 5
+a = int(input("Diga um numero: "))
+b = int(input("Diga um outro numero: "))
+
+while a < b:
+    print(a)
+    a+=1
+
+while b < a:
+    print(b)
+    b+=1
+'''
+
+
+
