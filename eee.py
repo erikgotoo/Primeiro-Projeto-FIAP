@@ -847,5 +847,68 @@ while b < a:
     b+=1
 '''
 
+'''
+#Exercicio 6
+nome = input("Diga a porra do seu nome: ")
+senha = input("Diga a porra da sua senha: ")
+while nome == senha:
+    print("A porra da senha nao pode ser igual a porra do nome krl")
+    nome = input("Diga a porra do seu nome: ")
+    senha = input("Diga a porra da sua senha: ")
+print("Agora sim krl")
+
+#Exercicio 7
+numero = int(input("Digite seu numero: "))
+multiplicador = 1
+while numero < 1 or numero > 10:
+    numero = int(input("Digite seu numero: "))
+while True:
+    final = numero * multiplicador
+    print(f"{numero} X {multiplicador} = {final}")
+    multiplicador += 1
+    if multiplicador > 10:
+        break
+
+#Exercicio 7 mas com todas as tabuadas de 1 a 10:
+numero = 1
+while numero <= 10:
+    i = 1
+    print(f"Tabuada do {numero}")
+    while i <= 10:
+        print (f"{numero}*{i} = {numero*i}")
+        i += 1
+    numero += 1
+    print()
+
+#Exercicio 8
+numero = int(input("Digite seu numero: "))
+n1 = 1
+n2 = 1
+i = 1
+print(n1)
+while i < numero:
+    print(n2)
+    aux = n1+n2
+    n1 = n2
+    n2 = aux
+    i += 1
+
+#Exercicio 9
+quantidade = 0
+impar = 0
+par = 0
+while quantidade < 10:
+ numero = (input(f"Diga o seu {quantidade+1}° numero: "))
+ if numero.isnumeric():
+    numero = int(numero)
+    if numero % 2 == 0:
+        par += 1
+    else:
+       impar += 1
+    quantidade += 1
+print(f"São {par} pares e {impar} impares!")
+'''
+
+
 
 
