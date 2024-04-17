@@ -908,6 +908,82 @@ while quantidade < 10:
     quantidade += 1
 print(f"São {par} pares e {impar} impares!")
 '''
+WEB DEV AULA 2 JS
+
+function soma(){
+    //Entrada
+    var n1 = parseFloat(document.getElementById("numero1").value);
+    var n2 = parseFloat(document.getElementById("numero2").value);
+    //Processamento
+    var soma = n1 + n2
+    //Saída
+    resultado.innerText = `O resultado da soma é ${soma}`
+}
+
+function subtracao(){
+    //Entrada
+    var n1 = parseFloat(document.getElementById("numero1").value);
+    var n2 = parseFloat(document.getElementById("numero2").value);
+    //Processamento
+    var subtracao = n1 - n2
+    //Saída
+    resultado.innerText = `O resultado da subtração é ${subtracao}`
+}
+
+function divisao(){
+//Entrada
+    var n1 = parseFloat(document.getElementById("numero1").value);
+    var n2 = parseFloat(document.getElementById("numero2").value);
+    //Processamento
+    var divisao = n1 / n2
+    //Saída
+    resultado.innerText = `O resultado da divisão é ${divisao}`
+    
+if (n2 === 0 || isNaN(n2) ) {
+    resultado.innerText = "Erro: divisâo por zero";
+}
+else {
+    resultado.innerText = n1 / n2;
+}
+
+}
+
+function multiplicacao(){
+    //Entrada
+    var n1 = parseFloat(document.getElementById("numero1").value);
+    var n2 = parseFloat(document.getElementById("numero2").value);
+    //Processamento
+    var multiplicacao = n1 * n2
+    //Saída
+    resultado.innerText = `O resultado da multiplicação é ${multiplicacao}`
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Calculadora HTML + JS</h1>
+    <label for="numero1">Numero1:</label>
+    <input type="number" id="numero1" placeholder="Digite Aqui">
+    <label for="numero2">Numero2:</label>
+    <input type="number" id="numero2" placeholder="Digite Aqui">
+    <button id="btnSoma" onclick="soma()">+</button>
+    <button id="btnSubtracao" onclick="subtracao()">-</button>
+    <button id="btnDivivsao" onclick="divisao()">/</button>
+    <button id="btnMultiplicacao" onclick="multiplicacao()">*</button>
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
 
 
 
