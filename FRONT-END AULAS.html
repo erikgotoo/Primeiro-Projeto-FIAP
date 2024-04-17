@@ -1,0 +1,162 @@
+!HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinheria Agnello</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header-page">
+            <h1>Vinícula Agnello</h1>
+            <!-- nav>ul>li*4>{Link$} -->
+            <nav>
+                <ul>
+                    <li><a href="https://sudoku-online.com/pt" target="_blank">Sudoku🍙</a></li>
+                    <li><a href="https://pokerpatio.com/" target="_blank">Poker♠</a></li>
+                    <li><a href="https://www.chesskid.com/pt-BR/" target="_blank">Chess♟</a></li>
+                    <li><a href="https://www.youtube.com/?hl=pt" target="_blank">Youtube💻</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <h2>Seja Bem Vindo!</h2>
+            <p>Somos uma vinheria dedicada a experiência do cliente, com empatia e simpatia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ducimus?</p>
+            <a href="https://caniuse.com/" target="_blank" class="btn">Conheça a Agnello</a>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+CSS! :root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-pink: #dc143d;
+    --transition: .5s;
+    --font-boddy: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: var(--font-boddy);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 600;
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--color-pink);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: gray; */
+    /* border: 10px solid var(--color-dark); */
+    /* padding: 20px; */
+    
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3));
+    background-image: url(../images/dan-meyers-0AgtPoAARtE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: 50%;
+}
+
+.header-page {
+    width: 100%;
+    height: 100px;
+    /* background-color: blue; */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-page ul {
+    color: var(--color-light);
+    font-size: 4vmin;
+} 
+
+
+
+.header-page ul {
+    display: flex;
+    gap: 30px;
+} 
+
+/********************************* fim hero *********************************/
+/********************************* hero ************************************/
+.hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    /*background-color: palegreen;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--color-light);
+    text-align: center;
+
+    
+    & h2 {
+        color: greenyellow;
+        font-size: clamp(24px, 4vw, 50px);
+    } 
+    
+    & p {
+        width: 70%;
+        text-wrap: balance;
+        line-height: 1.6; /* ou 60% */
+    }
+
+}
+
+.btn{
+    color: black;
+    border: 3px solid var(--color-pink);
+    background-color: var(--color-pink);
+    padding: 8px 30px;
+    border-radius: 70px;
+    transition: backgrond-color var(--transition);
+
+    &:hover {
+        background-color: transparent;
+
+    }
+
+}
+
+
+
+/********************************* fim hero *********************************/
+
+
