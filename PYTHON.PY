@@ -341,3 +341,36 @@ if total!=0:
       f"Há {total} votos totais \n")
 
  #(100*brancos/total:.2f)%
+
+
+AULA 9 ALGUNS EXEMPLOS DE USO PARA O FOR
+
+1-
+nomes = ["erik", "mineiro","wendell"]
+for nome in nomes:
+    print(nome)
+
+2-
+for i in range(1,15,2) #(começo,quantidade,pula de tanto em tanto):
+    print(i)
+
+3-
+for i in range(10):
+    print(i,end= " ")
+    i = 1
+    print(i)
+
+4-
+for i in range (10):
+    if i%2 == 0:
+        print(f"{i} é par")
+    else:
+        print(f"{i} é impar")
+
+5-
+i = 0
+for char in "dan":
+    i += 1
+print(i)
+'''
+
