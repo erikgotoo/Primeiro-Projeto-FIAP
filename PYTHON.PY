@@ -275,3 +275,69 @@ while partida < ano:
     partida += 1
 print(salario)
 '''
+#Exercicio 14
+intervalo1 = 0
+intervalo2 = 0
+intervalo3 = 0
+intervalo4 = 0
+
+while True:
+   numero = input("Diga o seu numero (>100 para sair): ")
+   if numero.isnumeric():
+     numero = int(numero)
+     if numero <= 25:
+      intervalo1 += 1
+     elif numero <= 50:
+      intervalo2 += 1
+     elif numero <= 75:
+      intervalo3 += 1
+     elif numero <= 100:
+      intervalo4 += 1
+     else:
+          break
+   else:
+    print("Coloca um numero krl")
+print(f"Há {intervalo1} numeros no primeiro intervalo 0-25\n"
+ f"Há {intervalo2} numeros no segundo intervalo 26-50\n"
+ f"Há {intervalo3} numeros no terceiro intervalo 51-75\n"
+ f"Há {intervalo4} numeros no quarto intervalo 76-100")
+'''
+#Exercicio 15
+participante1 = 0
+participante2 = 0
+participante3 = 0
+participante4 = 0
+branco = 0
+nulo = 0
+total = 0
+while True:
+    voto = input("Diga o seu voto \n0-Sair\n1-Danilo\n2-Erik\n3-Mineiro\n4-Lorenzo \nEscolha: ")
+    if not (voto == "0" or voto == "1" or voto == "2" or voto == "3" or voto == "4" or voto == "5" or voto == "6"):
+      print("Erro!")
+      continue
+    if voto == "0":
+     break
+    elif voto == "1":
+      participante1 += 1
+    elif voto == "2":
+      participante2 += 1
+    elif voto == "3":
+      participante3 += 1
+    elif voto == "4":
+      participante4 += 1
+    elif voto == "5":
+      branco += 1
+    elif voto == "6":
+      nulo += 1
+    total += 1
+
+if total!=0:
+ print(f"Há {participante1} votos no Danilo, {100*participante1/total:.2f}% dos votos\n"
+      f"Há {participante2} votos no Erik, {100*participante2/total:.2f}% dos votos\n"
+      f"Há {participante3} votos no Mineiro, {100*participante3/total:.2f}% dos votos\n"
+      f"Há {participante4} votos no Lorenzo, {100*participante4/total:.2f}% dos votos\n"
+      f"Há {branco} votos brancos, {100*branco/total:.2f}% dos votos\n"
+      f"Há {nulo} votos nulos, {100*nulo/total:.2f}% dos votos\n"
+      f"Há {total} votos totais \n")
+
+ #(100*brancos/total:.2f)%
