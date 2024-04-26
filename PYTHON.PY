@@ -344,7 +344,7 @@ if total!=0:
 
 
 AULA 9 ALGUNS EXEMPLOS DE USO PARA O FOR
-
+'''
 1-
 nomes = ["erik", "mineiro","wendell"]
 for nome in nomes:
@@ -369,8 +369,62 @@ for i in range (10):
 
 5-
 i = 0
-for char in "dan":
-    i += 1
+frase = "A CABECA DA MINHA PIKA"
+for char in frase:
+i += 1
 print(i)
-'''
 
+6- mesmo que o 5 com frase e sem contar o espaço 
+i = 0
+frase = "A CABECA DA MINHA PIKA"
+for char in frase:
+    if char != " ":
+     i += 1
+print(i)
+
+=============================================
+
+vogais = 0
+for char in 'erik':
+    print(char, end= '')
+    if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u':
+        vogais += 1
+print(f", essa palavra possue {vogais} vogais")
+
+senha_cadastrada = "1234"
+for i in range (3):
+    senha = input("Diga a sua senha: ")
+    if senha == senha_cadastrada:
+        print("Seja Bem Vindo!")
+        break
+    print(f"So mais {2-i} tentativas!")
+if senha != senha_cadastrada:
+    print("Vaza!")
+
+pares = 0
+impares = 0
+quantidade = 0
+for i in range(10):
+    numero = (input(f"Diga o seu {i+1}° numero: "))
+    if not numero.isnumeric():
+        numero = (input(f"Diga o seu {i+1}° numero: "))
+    numero = int(numero)
+    if numero % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+print(f"São {pares} pares e {impares} impares!")
+
+soma = 0
+quantidade = 0
+quantos = int(input("Diga quantos numeros vc deseja digitar: "))
+for i in range(quantos):
+    numero = (input(f"Diga o seu {i+1}° numero: "))
+    if not numero.isnumeric():
+        numero = (input(f"Diga o seu {i+1}° numero: "))
+    numero = int(numero)
+    soma += numero
+    quantidade += 1
+print(f"A soma é {soma}")
+print(f"A media é {soma/quantidade}")
+'''
