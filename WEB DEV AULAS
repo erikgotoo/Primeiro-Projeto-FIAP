@@ -58,3 +58,92 @@ function calcular(){
 */
 
 
+AULA 4
+
+======= SCRIPT JS =======
+do while
+let count = 0
+do{
+    console.log (count);
+    count++;
+} while(count < 5) 
+
+
+function contagem(){
+    var n1 = parseInt(document.getElementById("numero").value);
+    while (n1 > 0){
+        console.log(n1)
+        n1--
+    } 
+}
+
+
+for(i=1;i>10;i++){
+ console.log(i)
+}
+
+
+for(i=0; i<=10; i ++){
+    console.log (i)
+}
+
+
+function tabuada(){
+    var n1 = parseInt(document.getElementById("numero").value);
+    for (i=1; i<= 10; i++){
+      var multiplicacao = n1 * i 
+      console.log(`A tabuada é ${i} * ${n1} = ${multiplicacao}`) 
+   }
+}
+
+
+function verificar(){
+        var n1 = parseInt(document.getElementById("numero").value);
+        for (i=1; i <= n1; i++){
+            if(n1 % i == 0) 
+                console.log(`Os numeros são: ${i}`) 
+       }
+    }
+
+======== HTML =========
+ <!-- <h1>CADA LIVRO ESTÁ R$22</h1>
+    <h2>A PARTIR DE 7 SAI POR $15</h2>
+    <label for="quantidadelivros">Quantos livros voce quer comprar?</label>
+    <input type="number" id="quantidadelivros">
+    <button id="btncalcular" onclick="calcular()">VALOR</button>
+    <h3 id="resultado"></h3> -->
+    
+    <!-- <h1>LIMITE DE VELOCIDADE 60KM/H</h1>
+    <h2>DIGITE A SUA MULTA</h2>
+    <label for="velocidade">Qual a sua velocidade?</label>
+    <input type="number" id="velocidade">
+    <button id="btncalcular" onclick="calcular()">PRONTO</button>
+    <h3 id="resultado"></h3>-->
+    
+    <!-- <h1>Contagem regressiva</h1>
+    <h2>DIGITE UM NUMERO POSITIVO E INTEIRO</h2>
+    <label for="numero">Qual o seu numero?</label>
+    <input type="number" id="numero" placeholder="DIGITA LOGO FDP">
+    <button id="btnCalcular" onclick="contagem()">clica</button>
+    <script src="script.js"></script> -->
+
+    
+    <!-- <h1>Contagem regressiva</h1>
+    <h2>DIGITE UM NUMERO POSITIVO E INTEIRO</h2>
+    <label for="numero">Qual o seu numero?</label>
+    <input type="number" id="numero" placeholder="DIGITA LOGO FDP">
+    <button id="btnCalcular" onclick="tabuada()">clica</button>
+    
+    <script src="script.js"></script> -->
+    
+    <h1>Verificar o numero</h1>
+    <h2>DIGITE UM NUMERO </h2>
+    <label for="numero">Qual o seu numero?</label>
+    <input type="number" id="numero" placeholder="DIGITA LOGO FDP">
+    <button id="btnCalcular" onclick="verificar()">clica</button>
+    
+    <script src="script.js"></script>
+
+
+
+
