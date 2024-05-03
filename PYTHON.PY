@@ -428,3 +428,72 @@ for i in range(quantos):
 print(f"A soma é {soma}")
 print(f"A media é {soma/quantidade}")
 '''
+
+AULA 10 MAIS FOR - E LISTA!!
+'''
+comprimento = 0
+for char in 'danilo':
+    comprimento += 1
+print(comprimento)
+
+#Exercicio 1
+soma = 0
+quantidade = 0
+quantos = int(input("Diga quantos numeros vc deseja digitar: "))
+for i in range(quantos):
+    numero = (input(f"Diga o seu {i+1}° numero: "))
+    if not numero.isnumeric():
+        numero = (input(f"Diga o seu {i+1}° numero: "))
+    numero = int(numero)
+    soma += numero
+    quantidade += 1
+print(f"A soma é {soma}")
+print(f"A media é {soma/quantidade}")
+
+#Exercicio 2
+pares = 0
+impares = 0
+quantidade = 0
+for i in range(10):
+    numero = (input(f"Diga o seu {i+1}° numero: "))
+    while not numero.isnumeric():
+        numero = (input(f"Diga o seu {i+1}° numero: "))
+    numero = int(numero)
+    if numero % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+print(f"São {pares} pares e {impares} impares!")
+
+#Exercicio 3
+soma = 0
+for i in range(1,101):
+    soma += i
+print(soma)
+
+#Exercicio 4
+for i in range(1,11):
+    print(f"Tabuada do {i}: ")
+    for j in range(1,11):
+        print(f"{i} * {j} = {i*j}")
+    print()
+
+#LISTA!
+lista = [6,True,'sadksada',[],4.2]
+
+for i in range(len(lista)):
+    print(f"lista[{i}] = {lista[i]}")
+
+for elem in lista:
+    print(elem)
+
+adicionar = input("coloque algo na lista: ")
+lista = []
+lista.append(adicionar)
+print(lista)
+lista.append(111)
+print(lista)
+lista.append(11)
+print(lista)
+'''
+
