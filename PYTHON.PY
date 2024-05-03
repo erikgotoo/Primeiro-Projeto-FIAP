@@ -497,3 +497,23 @@ lista.append(11)
 print(lista)
 '''
 
+LISTA USANDO LISTA 
+
+#Exercicio 1
+lista = [3,4,6,23,6,84,7,43,2,10]
+soma = 0
+for i in range(len(lista)):
+    soma += lista[i]
+print(f"soma = {soma} e media = {soma/len(lista)}")
+
+#Exercicio 2
+lista = [3,4,6,23,6,84,7,43,2,10]
+pares = []
+impares = []
+for i in range(len(lista)):
+    if lista[i] % 2 == 0:
+        pares.append(lista[i])
+        continue
+    impares.append(lista[i])
+print(f"pares = {pares} e impares = {impares}")
+
