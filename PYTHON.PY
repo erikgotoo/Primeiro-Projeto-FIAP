@@ -517,3 +517,60 @@ for i in range(len(lista)):
     impares.append(lista[i])
 print(f"pares = {pares} e impares = {impares}")
 
+
+AULA PYTHON FUNCAO!!!!!!!!!!!!
+'''
+#DOCS DA AULA: t.ly/8kdzS
+
+
+#Funcao verificador de idade para votos
+
+def voto(nome, idade):
+    if idade >= 16 and idade < 18:
+        print(f"Sim, a pessoa {nome} pode votar")
+        return True
+    elif idade >= 18:
+        print(f"A pessoa {nome} precisa votar")
+        return True
+    else:
+        print(f"Não, a pessoa {nome} nao pode votar")
+        return False
+
+a = voto("Lucas", 38)
+print(f"a primeira resposta foi {a}")
+b = voto("Maira", 13)
+print(f"a segunda resposta foi {b}")
+c = voto("Pedro", 17)
+nome2 = input("Digite o seu nome: ")
+idade2 = int(input("Digite a sua idade: "))
+voto(nome2, idade2)
+
+#Funcao calculador de idades
+
+#from datetime import datetime
+#agora = datetime.now()
+#ano_atual = agora.year
+ano_atual = 2024
+nome = input("Diga o seu nome: ")
+def calculadorDeIdade(ano):
+    idade = ano_atual - ano
+    print(f"{nome} a sua idade é {idade} anos!")
+    return idade
+
+
+ano = int(input("Diga o seu ano de nacimento: "))
+calculadorDeIdade(ano)
+
+#Funcao descobrir o maior numero
+
+def maiorNumero(numeros):
+    maiorNumero = numeros[0]
+    for maior in numeros:
+        if maior > maiorNumero:
+            maiorNumero = maior
+    print(f"O maior numero é {maiorNumero}")
+    return maiorNumero
+
+listaNumeros = maiorNumero([-1,-2,-3,30,60,70,20,25,45,20,-100])
+'''
+
