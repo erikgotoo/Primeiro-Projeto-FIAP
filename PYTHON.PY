@@ -574,3 +574,60 @@ def maiorNumero(numeros):
 listaNumeros = maiorNumero([-1,-2,-3,30,60,70,20,25,45,20,-100])
 '''
 
+
+def add1min(hora,minuto):
+    proxMinuto = minuto+1
+    if hora == 23 and proxMinuto == 60:
+        return "00:00"
+    elif proxMinuto == 60:
+        hora = hora+1
+        return f"{hora}:00"
+    elif proxMinuto < 10:
+        return f"{hora}:0{proxMinuto}"
+    elif hora > 23 or proxMinuto > 60:
+        return f"Informações Inválidas"
+    else:
+        return f"{hora}:{proxMinuto}"
+
+print(add1min(23,22))
+
+def numeroValido(numero):
+    while True:
+        numero = input("Diga o seu numero POSITIVO: ")
+        if not numero.isnumeric():
+            continue
+        numero = int(numero)
+        return numero
+
+numero = input("Diga o seu numero: ")
+
+
+adicionar = input("coloque algo na lista: ")
+lista = []
+lista.append(adicionar)
+print(lista)
+lista.append(111)
+print(lista)
+lista.append(11)
+print(lista)
+
+'''
+quantia = int(input("Coloque seu numero na lista: "))
+
+listaNumeros = []
+
+for i in range(quantia):
+    numero = int(input(f"Diga o seu {i + 1}°: "))
+    listaNumeros.append(numero)
+
+
+def somar(listaNumeros):
+    soma = 0
+    for i in listaNumeros:
+        soma += i
+    return soma
+
+print(somar(listaNumeros))
+
+
+
