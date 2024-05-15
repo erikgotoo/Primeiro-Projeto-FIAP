@@ -146,4 +146,85 @@ function verificar(){
 
 
 
+AULA FUNCTION E CONST
+
+/*
+
+const letras = ["J", "C", "E", "R"]
+//Adiciona um elemento no final do array (da const acima)
+letras.push("M")
+//Remove o ultimo elemento do array (da const acima)
+letras.pop()
+//Adiciona um elemento no começo do array (da const acima)
+letras.unshift("M")
+//Remove o primeiro elemento do array (da const acima)
+letras.shift()
+//Atualizar o valor de um array (da const acima)
+letras[3] = "M"
+
+console.log(letras)
+
+
+for (i=0;i<=10,i++;){
+    console.log(letras[i])
+}
+
+//Coloca uma função dentro dos dados do array
+letras.forEach(
+    function rodarArray(letras){
+        console.log(letras + " Letra de quem da o cu!")
+    }
+    
+    )
+    
+    //Simplificação do ForEach function
+    letras.forEach(letras => console.log (letras))
+    
+    //Map cria uma nova array para modificar/atualizar
+    const letrasModificado =
+    letras.map(letras => console.log(letras + " letra de quem da o cu!"))
+    
+    function mudarLetras(){
+        return letras.map(letras => console.log(letras + " letra de quem da o cu!"))
+    }
+
+    //ex 1
+    const numeros = [1,2,3,4,5]
+    
+    const Dobrada = 
+    
+    function Dobrada(){
+        numeros.map(numeros => console.log(numeros * 2))
+        return numeros.map(i => i * 2)
+    }
+    console.log("Nova Lista: " + Dobrada())
+    
+    //ex2
+    const frase = ["oi, tudo bem"]
+    
+    function Maiuscula(){
+        return frase.map(frase => console.log(frase.toUpperCase()))
+    }
+    Maiuscula()
+    */
+   const filmes = [
+        {   
+            nome: "Avatar",
+            diretor: "Jorge",
+            ano: 2004
+        },
+        {
+            nome: "Barbie",
+            diretor: "Velho",
+            ano: 2002
+        },
+        {
+            nome: "Cleber",
+            diretor: "Verme",
+            ano: 2001
+        }
+   ]
+console.log(filmes.map(filmes => filmes.nome))
+console.log(filmes.map(filmes => filmes.ano > 2001))
+console.log(filmes.filter(filmes => filmes.ano > 2001))
 
