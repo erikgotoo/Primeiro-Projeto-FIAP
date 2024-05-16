@@ -629,5 +629,112 @@ def somar(listaNumeros):
 
 print(somar(listaNumeros))
 
+===============================================================================================
+def checa_numero(msg):
+    numero = input(msg)
+    while not numero.isnumeric():
+        numero = input(msg)
+    numero = int(numero)
+    return numero
+
+quantia = checa_numero("Digite a quantidade de numeros para adicionar na lista: ")
+listaNumeros = []
+
+for qnt in range(quantia):
+    numero = checa_numero(f"Diga o seu {qnt + 1}°: ")
+    listaNumeros.append(numero)
+
+def somar(listaNumeros):
+    soma = 0
+    for elem in listaNumeros:
+        soma += elem
+    return soma
+
+def verificaMaior(lista):
+    maior = lista[0]
+    for elem in lista:
+        if elem > maior:
+            maior = elem
+    return maior
+
+def verificaPares(lista_pares_impares):
+    pares = []
+    impares = []
+    for elem in lista_pares_impares:
+        if elem % 2 == 0:
+            pares.append(elem)
+        else:
+            impares.append(elem)
+    return f"Pares:{pares},Impares{impares}"
+
+def verificaOrdem(lista_crescente):
+    a = lista_crescente[0]
+    for elem in lista_crescente:
+        
+
+
+print("A soma é:",somar(listaNumeros))
+print("O maior numero digitado foi:",verificaMaior(listaNumeros))
+print("Os numeros pares são:",verificaPares(listaNumeros))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+def verifica_pares(lista_numeros):
+    pares = []
+    for elem in lista:
+        if elem%2 == 0:
+            pares.append(elem)
+    return pares
+
+lista = [2,4,1,83,239,3249,439,32,43,54]
+lista2 = [12,13,354,3435,213,2332,3432]
+
+filtro_pares = verifica_pares(lista)
+filtro_pares = verifica_pares(lista2)
+
+print(filtro_pares)
+print(filtro_pares)
+
+
+#numero_real = checa_numero("Diga o seu numero: ")
+#print(numero_real)
+#x = checa_numero("Diga o seu numero: ")
+#print(x)
+
+def verifica_elemento(lista, elemento):
+    for i in range(len(lista)):
+        if lista[i] == elemento:
+            return True
+        return False
+
+def forca_opcao(msg, lista_opcoes):
+    opcao = input(msg)
+    while not verifica_elemento((lista_opcoes,opcao)):
+        print("Digite uma opção valida: ")
+        opcao = int(opcao)
+    return opcao
+
+carros = ["up","gol","uno","celta"]
+carros = forca_opcao("Qual carro vc deseja:\n ","Opcao invalida",carros)
+print(carros)
+continuar_ou_nao = forca_opcao("Deseja continuar: ","(s/n)",["s","n"])
+print(continuar_ou_nao)
+'''
 
 
