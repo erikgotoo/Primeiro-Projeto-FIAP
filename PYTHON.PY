@@ -737,4 +737,67 @@ continuar_ou_nao = forca_opcao("Deseja continuar: ","(s/n)",["s","n"])
 print(continuar_ou_nao)
 '''
 
+============================================================================================
+def checa_numero(msg):
+    numero = input(msg)
+    while not numero.isnumeric():
+        numero = input(msg)
+    numero = int(numero)
+    return numero
 
+quantia = checa_numero("Digite a quantidade de numeros para adicionar na lista: ")
+listaNumeros = []
+
+for qnt in range(quantia):
+    numero = checa_numero(f"Diga o seu {qnt + 1}°: ")
+    listaNumeros.append(numero)
+
+def somar(listaSoma):
+    soma = 0
+    for elem in listaSoma:
+        soma += elem
+    return soma
+
+def media(listaMedia):
+    soma = somar(listaNumeros)
+    media = soma/len(listaMedia)
+    return media
+
+def verificaMaior(listaMaior):
+    maior = listaMaior[0]
+    for elem in listaMaior:
+        if elem > maior:
+            maior = elem
+    return maior
+
+def verificaPares(lista_pares_impares):
+    pares = []
+    impares = []
+    for elem in lista_pares_impares:
+        if elem % 2 == 0:
+            pares.append(elem)
+        else:
+            impares.append(elem)
+    return f"Pares:{pares},Impares{impares}"
+
+print("A soma é:",somar(listaNumeros))
+print("A media é:",media((listaNumeros)))
+print("O maior numero digitado foi:",verificaMaior(listaNumeros))
+print("Os numeros pares são:",verificaPares(listaNumeros))
+
+#----------------------------------------------------------------------
+def inverteLista(lista):
+    for i in range(len(lista)//2):
+        ultimo = len(lista) - 1
+        coringa = lista[i]
+        lista[i] = lista[ultimo - i]
+        lista[ultimo - i] = coringa
+    return
+                                                                        
+lista = [1,2,3,4,5,6,7,8,9]
+
+inverteLista(lista)
+listaOriginal = lista[:]
+inverteLista(listaOriginal)
+print("Lista Original:",listaOriginal)
+print("A lista invertida ficaria:",lista)
