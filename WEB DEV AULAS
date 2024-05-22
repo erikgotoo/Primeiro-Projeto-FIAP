@@ -228,3 +228,124 @@ console.log(filmes.map(filmes => filmes.nome))
 console.log(filmes.map(filmes => filmes.ano > 2001))
 console.log(filmes.filter(filmes => filmes.ano > 2001))
 
+===========================WEB CRUD=======================================
+===========================JAVASCRIPT=====================================
+const btnCriar = document.querySelector('#btnCriar');
+const inputUsuario = document.querySelector('#inputUsuario');
+const listaFilmes = document.querySelector('#listaFilmes');
+
+const filmes = [
+    {
+        nome: "BLABLABLA",
+        diretor: "AAAAAA",
+        ano: 2000,
+        sinopse: "BBBBBBBBBBB"
+    },
+    {
+        nome: "CLEBER",
+        diretor: "MARCOS",
+        ano: 2011,
+        sinopse: "FODASE"
+    },
+    {
+        nome: "BOSTA",
+        diretor: "CU",
+        ano: 2024,
+        sinopse: "Saiu da bunda"
+    }
+]
+
+btnCriar.addEventListener('click',function(infosDoEvent){
+    infosDoEvent.preventDefault();
+
+
+    let novoFilme = document.createElement('li');
+    novoFilme.innerText = inputUsuario.value;
+
+    let btnEditar = document.createElement('button');
+    btnEditar.innerText = "Editar";
+    btnEditar.addEventListener('click', function(){
+        novoFilme.style.backgroundColor = "pink"
+        novoFilme.classList.toggle('mudar-cor')
+    })
+    
+    let imagemFilme = document.createElement('img');
+    imagemFilme.src = "";
+    imagemFilme.alt = "";
+    
+    novoFilme.append(btnEditar);
+    listaFilmes.append(novoFilme);
+
+    inputUsuario.value = "";
+
+
+})
+
+//infosDoEvento - parametro que guarda todas as informações do clique
+//infosDoEvento.target - elemento que disparou o evento
+//infosDoEvento.target.id - id fo elemento que foi clicado 
+//infosDoEvento.target.id.parentNode - pega o elemento pai do elemento que foi clicado 
+//.creatElemente - cria um novo elemento html
+//.append - adiciona um elemente dentro de outro elemento html
+
+//CREATE
+function criarFilme(){
+
+    let filmeAdicionado = {
+        nome: inputUsuario.value,
+        diretor:inputDiretor.value,
+        ano:inputAno.value,
+        sinopse:inputSinopse.value
+    }
+    filmes.unshift(filmeAdicionado)
+
+    renderizarNaTela()
+}
+window.onload = renderizarNaTela();
+
+//READ
+
+function renderizarNaTela(){
+    listaFilmes.innerHTML = ""
+
+    filmes.forEach(
+        filme => {
+            let novoFilme = document.createElement('li');
+            novoFilme.innerHTML = `
+            <h1>${filme.nome}</h1>
+            <img src=${filme}<img>
+            <p>${filme.diretor}</p>
+            <p>${filme.ano}</p>
+            <p>${filme.sinopse}</p>
+            `
+
+            listaFilmes.append(novoFilme);
+        }
+    )
+}
+
+//UPDATE
+
+//DELETE
+
+====================HTML========================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+        <input type="text" id="inputUsuario" placeholder="Digite o seu filme aqui">
+        <button id="btnCriar">Criar Filme</button>
+    </form>
+    <ul id="listaFilmes">
+        
+    </ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>
