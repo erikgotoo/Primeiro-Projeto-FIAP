@@ -801,3 +801,20 @@ listaOriginal = lista[:]
 inverteLista(listaOriginal)
 print("Lista Original:",listaOriginal)
 print("A lista invertida ficaria:",lista)
+
+
+
+x = 2
+print("CERTO") if x == 2 else print("ERRADO")
+
+opcao = input("Diga uma das opções a ou b:").lower()
+
+match opcao:
+    case "a":
+        print("Opção A selecionada")
+    case "b":
+        print("Opção B selecionada")
+    case _:
+        print("Opção Invalida")
+
+
