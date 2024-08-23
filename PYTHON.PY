@@ -818,3 +818,73 @@ match opcao:
         print("Opção Invalida")
 
 
+'''
+palavra = "banana"
+myit = iter(palavra)
+
+for i in palavra:
+    print(next(myit))
+
+aluno1 = "WELDER"
+aluno2 = "ALEXIA"
+aluno3 = "EDUDU"
+aluno4 = "ABDINEY"
+
+nome = aluno2
+
+if nome in ["WELDER", "EDUDU, ABDINEY"]:
+    print("MASCULINA")
+
+else:
+    print("FEMININO")
+
+for i in range(0,30):
+    if i == 15:
+        print("ACHEI")
+        break
+else:
+    print("NAO ACHEI")
+
+
+Lista = ["Banana", "Abacaxi", "Manga", "Uva"]
+
+for i, fruta in enumerate(Lista):
+    print(i , ":", fruta)
+
+a = ("John", "Charles", "Mike")
+b = ("Jenny", "Christy", "Monica")
+
+x = zip(a,b)
+print(list(x))
+
+names = ["John", "Marcelo"]
+surnames = ["Smith", "Oka"]
+numbers = [1, 2]
+
+for name, surnames, numbers in zip(names, surnames, numbers):
+    print(name, surnames, numbers)
+
+quadrados = [i**2 for i in range(0, 101) if i <= 10]
+
+print(quadrados)
+
+def gerar_lista_de_quadrados():
+    Lista = []
+    for i in range(0, 101):
+        Lista.append(i**2)
+    return Lista
+
+L = [i**2 for i in range(0, 101)]
+print(L)
+'''
+import random
+
+numero = random.randint(0,10)
+
+while True:
+    chute = int(input("Digite um chute: "))
+    if chute == numero:
+        print("Acertou Miserave")
+        break
+    else:
+        print("ERRRRRRROU")
