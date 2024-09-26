@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmissão ao Vivo</title>
+    <link rel="stylesheet" href="/css/styles-live.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><a href="sports-games.html">Sports Games</a></h1>
+        <nav>
+            <ul id="secoes">
+                <li class="dropdown">
+                    <a href="">Transmissões ao Vivo</a>
+                    <div class="dropdown-live">
+                        <a href="live-page.html">Transmissão 1</a>
+                        <a href="live2-page.html">Transmissão 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="equipes-page.html">Equipes</a>
+                    <div class="dropdown-equipes">
+                        <a href="time1-page.html">Brasil</a>
+                        <a href="time2-page.html">Italia</a>
+                        <a href="time3-page.html">Alemanha</a>
+                        <a href="time4-page.html">França</a>
+                        <a href="time5-page.html">Holanda</a>
+                        <a href="time6-page.html">Japão</a>
+                    </div>
+                </li>
+                <li><a href="resultados-page.html">Resultados</a></li>
+                <li><a href="register-page.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      
+        <div class="video-section">
+            <iframe id="live-video" width="560" height="315" src="https://www.youtube.com/embed/taA22dkkQoU?si=ayVU-67JBIF1hvUY&controls=0&autoplay=1&loop=1&mute=1&start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="chat-section">
+            <div class="chat-box">
+                <div id="chat-messages">
+                </div>
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+                    <button type="submit" id="chat-send">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
